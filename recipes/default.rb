@@ -57,7 +57,7 @@ data_bag_item('users','login_account')['users'].each do |user|
     end
 
     # make authorized_key
-    if user["key"]
+    if user["authorized_keys"]
       file authorized_keys do
         owner   user["name"]
         mode    0600
