@@ -2,6 +2,10 @@
 
 This file is used to list changes made in each version of users.
 
+## 0.1.1:
+
+* Bug fix of creating user home directory
+
 ## 0.1.0:
 
 * Initial release of users

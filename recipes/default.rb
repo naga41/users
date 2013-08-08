@@ -20,8 +20,7 @@ data_bag_item('users','login_account')['users'].each do |user|
   user_act = user["active"] ? "create":"remove"
 
   # make text of home directory
-  home_dir = "/home/" + user["name"]
-  log user["password"]
+  home_dir = user["home"]
 
   # make hashed password
   if user["password"]
