@@ -60,7 +60,7 @@ data_bag_item('users','login_account')['users'].each do |user|
       file authorized_keys do
         owner   user["name"]
         mode    0600
-        content user["authorized_keys"]
+        content user["authorized_keys"].join("\n")
       end
     end
   end

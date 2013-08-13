@@ -26,7 +26,7 @@ Make data_bags "users" and data_bag_item "login_account" like below in your repo
   "users":[
     {
       "comment":         "Login User",
-      "authorized_keys": "ssh-rsa xxx",
+      "authorized_keys": ["ssh-rsa xxx"],
       "name":            "login-user",
       "home":            "/home/login-user",
       "shell":           "/bin/bash",
@@ -36,7 +36,7 @@ Make data_bags "users" and data_bag_item "login_account" like below in your repo
     },
     {
       "comment":         "Admin User",
-      "authorized_keys": null,
+      "authorized_keys": [null],
       "name":            "admin",
       "home":            "/home/admin",
       "shell":           "/bin/bash",
@@ -49,7 +49,7 @@ Make data_bags "users" and data_bag_item "login_account" like below in your repo
         "web"
       ],
       "comment":         "Web User",
-      "authorized_keys": null,
+      "authorized_keys": [null],
       "name":            "www-user",
       "home":            "/home/www-user",
       "shell":           "/bin/bash",
